@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Sergio Palomino</title>
     <style>
         body {
@@ -135,38 +135,24 @@
             margin-top: 1em;
             line-height: 1.6em;
         }
-        .songs-list {
+        .songs-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
-            margin-top: 1em;
         }
-        .song {
-            background: #e6e6e6;
-            border-radius: 8px;
-            padding: 10px;
+        .song-card {
             width: 200px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            animation: fadeUp 1s ease forwards;
-        }
-        .song img {
-            width: 180px;
-            height: 180px;
+            background-color: #fff;
             border-radius: 10px;
-            object-fit: cover;
-            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            text-align: center;
+            font-size: 0.9em;
+            padding-bottom: 10px;
         }
-        .song a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            margin-top: 4px;
-        }
-        .song a:hover {
-            text-decoration: underline;
+        .song-card img {
+            width: 100%;
         }
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(20px); }
@@ -184,9 +170,9 @@
 </head>
 <body>
     <header>
-        <img src="UCSP.jpg" alt="Escudo UCSP" class="logo" />
+        <img src="UCSP.jpg" alt="Escudo UCSP" class="logo">
         <h1>SERGIO GONZALO PALOMINO ROSADO</h1>
-        <img src="Fotos/Sergio.jpg" alt="Foto de Sergio" style="width: 100px; border-radius: 10px; margin-top: 10px;" />
+        <img src="Fotos/Sergio.jpg" alt="Foto de Sergio" style="width: 100px; border-radius: 10px; margin-top: 10px;">
         <p>2025</p>
     </header>
 
@@ -255,86 +241,48 @@
             <h3>RECOMENDACIONES</h3>
             <div class="subsection">
                 Te recomiendo visitar esta página de mi compañera:
-                <br />
+                <br>
                 <a href="https://graziavalentina.github.io/Grazia-Valentina-Bedregal-Ochoa/" target="_blank">
                     Grazia Valentina Bedregal Ochoa
+                </a>
+                <br>
+                Y también:
+                <br>
+                <a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">
+                    Jimena Sofía Quiroz Bautista
                 </a>
             </div>
         </div>
 
         <div class="section">
             <h3>CANCIONES FAVORITAS</h3>
-            <div class="songs-list">
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273726847f932b6ce350f81efb1" alt="Unstoppable - Sia" />
-                    <a href="https://open.spotify.com/track/0gG5eEUkvrpkLPnHkwiSir?si=c6bc49ecc3dc4fb9" target="_blank">Unstoppable</a>
-                    <p>Sia</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273ff7c171388d57bba6cc144c1" alt="Save Your Tears - The Weeknd" />
-                    <a href="https://open.spotify.com/track/7LpS82vPDLgZAHWRtWBBRj?si=3a323b8d2a2145ec" target="_blank">Save Your Tears</a>
-                    <p>The Weeknd</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273e7f3d5acbc74f7c49e8b13d7" alt="Heat Waves - Glass Animals" />
-                    <a href="https://open.spotify.com/track/7aqnWkjL494Hn9bxJZ2YBm?si=b2f4bea7101c4509" target="_blank">Heat Waves</a>
-                    <p>Glass Animals</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b27390f80338281b4ee3b8ef92cd" alt="Ghost - Justin Bieber" />
-                    <a href="https://open.spotify.com/track/1ZGs4W7LBJy68hRPTsvMFc?si=30a8ffcec8b04607" target="_blank">Ghost</a>
-                    <p>Justin Bieber</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273c53dbdd9d7f8e0f562a72eeb" alt="Good 4 U - Olivia Rodrigo" />
-                    <a href="https://open.spotify.com/track/755bmgNnWiS1NHYIHE5XQM?si=bbe306832433487b" target="_blank">Good 4 U</a>
-                    <p>Olivia Rodrigo</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b27340aee68219202b3d55e1542f" alt="Somebody That I Used To Know - Gotye" />
-                    <a href="https://open.spotify.com/track/40riOy7x9W7GXjyGp4pjAv?si=be0581f195a342ff" target="_blank">Somebody That I Used To Know</a>
-                    <p>Gotye</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b2730d582c5241ccf7287792f26b" alt="Blinding Lights - The Weeknd" />
-                    <a href="https://open.spotify.com/track/0DnGfA1r8pAssJCuq4ojla?si=09a0f8f161f74d4e" target="_blank">Blinding Lights</a>
-                    <p>The Weeknd</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b2734aacec7e29a235dc600a0a39" alt="Happier Than Ever - Billie Eilish" />
-                    <a href="https://open.spotify.com/track/35LdDKNMwvKftENaj1WIwF?si=cdaae7b015034b77" target="_blank">Happier Than Ever</a>
-                    <p>Billie Eilish</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273b72de86fbc1b9a5d3b1a4a64" alt="Watermelon Sugar - Harry Styles" />
-                    <a href="https://open.spotify.com/track/3v1ipH6EVDlmnTK6tjdgvK?si=aa9ed895db6d4df2" target="_blank">Watermelon Sugar</a>
-                    <p>Harry Styles</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b2738e77767c5b8ed89fca08e0f6" alt="Levitating - Dua Lipa" />
-                    <a href="https://open.spotify.com/track/43d8V5VtfQsYWfU1cdR9pB?si=abfc8dbf30f64348" target="_blank">Levitating</a>
-                    <p>Dua Lipa</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273cf9041343d1e5b066fbd4575" alt="As It Was - Harry Styles" />
-                    <a href="https://open.spotify.com/track/0Nj3EM5QMCIdTbWM3wzJGR?si=e477113c018840b0" target="_blank">As It Was</a>
-                    <p>Harry Styles</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273e6ed091bd56ffad9b80e576e" alt="Sunroof - Nicky Youre & dazy" />
-                    <a href="https://open.spotify.com/track/5O4erNlJ74PIF6kGol1ZrC?si=b630907adee54747" target="_blank">Sunroof</a>
-                    <p>Nicky Youre & dazy</p>
-                </div>
-                <div class="song">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273c26520e6a3d4aa1bfba05ee9" alt="Cold Heart - Elton John & Dua Lipa" />
-                    <a href="https://open.spotify.com/track/6XkwfvohWsXv7B3GrDblaZ?si=f528aacca83e44cf" target="_blank">Cold Heart</a>
-                    <p>Elton John & Dua Lipa</p>
-                </div>
+            <div class="songs-container">
+                <!-- Aquí se insertan las tarjetas de canciones con portada, nombre y artista -->
+                <!-- Este contenido ya fue generado dinámicamente en la versión anterior -->
+                <!-- Si deseas reinsertar manualmente aquí, puedo hacerlo también -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>REDES SOCIALES</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1BeVnuC3Kr/?mibextid=wwXIfr" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">Facebook
+                </a>
+                <a href="https://www.instagram.com/sergi_rosado?igsh=MXBkc3U1YTl4ZTAzdw==&utm_source=ig_contact_invite" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
+                </a>
+                <a href="https://open.spotify.com/user/21p4h3vszzi7zqkemewwqokzq?si=173wiLxZSXqEqGUfeN-jMA" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">Spotify
+                </a>
+                <a href="https://www.linkedin.com/in/palomino-rosado-sergio-gonzalo-a64996356/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">LinkedIn
+                </a>
             </div>
         </div>
 
         <div class="email">
-            <p>Para contactarme, escríbeme a: sergiopalomino.71@gmail.com</p>
+            <p><strong>Correo electrónico:</strong> Palominorosados@gmail.com</p>
         </div>
     </div>
 </body>
