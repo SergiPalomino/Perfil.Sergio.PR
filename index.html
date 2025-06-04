@@ -2,333 +2,127 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Perfil de Sergio Palomino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mi Página Personal - Sergio Palomino</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #e0e0e0;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            color: #212121;
-            animation: fadeIn 1s ease-in-out;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #000000;
-            color: white;
-            padding: 1.5em 0;
             text-align: center;
-            position: relative;
-        }
-        header h1 {
+            padding: 20px;
+            background-color: #222;
             color: white;
         }
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            height: 60px;
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #f0f0f0;
-            padding: 2em;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            margin-top: 2em;
-            animation: fadeUp 1s ease forwards;
+        h3 {
+            color: #2c3e50;
+            margin-top: 0;
         }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-        .section {
-            margin-bottom: 2em;
-            padding: 1em 2em;
-            border-left: 4px solid #000;
-            background-color: #d6d6d6;
-            animation: fadeUp 1s ease forwards;
-        }
-        .section h3 {
-            color: #000;
-            border-bottom: 1px solid #bbb;
-            padding-bottom: 0.5em;
-            text-transform: uppercase;
-        }
-        .subsection {
-            margin: 0.5em 0;
-            background-color: #e6e6e6;
-            padding: 0.5em;
-            border-radius: 6px;
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 1.5em;
-        }
-        .social-links a {
-            margin: 0 15px;
+        a {
+            color: #0077cc;
             text-decoration: none;
-            color: #000000;
-            font-weight: bold;
         }
-        .social-links img {
-            height: 24px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        .email {
-            text-align: center;
-            margin-top: 2em;
-            color: #666;
-        }
-        .skill {
-            margin: 20px 0;
-            animation: fadeUp 0.6s ease forwards;
-        }
-        .skill label {
-            font-weight: bold;
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1rem;
+        a:hover {
+            text-decoration: underline;
         }
         .icon {
-            font-size: 1.2em;
-        }
-        .progress-bar {
-            border-radius: 20px;
-            overflow: hidden;
-            height: 24px;
-            background-color: #e0e0e0;
-            margin-top: 5px;
-        }
-        .progress {
-            height: 100%;
-            color: white;
-            text-align: right;
-            padding-right: 10px;
-            line-height: 24px;
-            font-size: 14px;
-            font-weight: bold;
-            border-radius: 20px 0 0 20px;
-            animation: fillProgress 1.5s ease forwards;
-        }
-        .grey1 .progress { background-color: #444; }
-        .grey2 .progress { background-color: #555; }
-        .grey3 .progress { background-color: #666; }
-        .grey4 .progress { background-color: #777; }
-        .skill-desc {
-            font-size: 0.9rem;
-            color: #333;
-            margin-top: 5px;
-            margin-left: 5px;
-            font-style: italic;
-        }
-        .goals {
-            padding-left: 1.2em;
-            font-size: 0.95rem;
-            color: #333;
-            list-style-type: disc;
-            animation: fadeUp 1s ease forwards;
-            margin-top: 1em;
-            line-height: 1.6em;
+            width: 16px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
         ol.song-list {
-            padding-left: 1.2em;
-            font-size: 0.95rem;
-            color: #333;
-            margin-top: 0.8em;
-        }
-        ol.song-list li {
-            margin: 0.4em 0;
-        }
-        ol.song-list li a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 600;
-        }
-        ol.song-list li a:hover {
-            text-decoration: underline;
-            color: #0077cc;
-        }
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes fillProgress {
-            from { width: 0; }
-            to { width: inherit; }
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="UCSP.jpg" alt="Escudo UCSP" class="logo" />
-        <h1>SERGIO GONZALO PALOMINO ROSADO</h1>
-        <img src="Fotos/Sergio.jpg" alt="Foto de Sergio" style="width: 100px; border-radius: 10px; margin-top: 10px;" />
-        <p>2025</p>
-    </header>
 
-    <div class="container">
-        <div class="section">
-            <h3>INFORMACIÓN ACADÉMICA</h3>
-            <div class="subsection"><strong>Universidad:</strong> Universidad Católica San Pablo</div>
-            <div class="subsection"><strong>Fecha de nacimiento:</strong> 04 de agosto del 2005</div>
-            <div class="subsection"><strong>Edad:</strong> 19 años</div>
-            <div class="subsection"><strong>Sexo:</strong> Masculino</div>
-            <div class="subsection"><strong>Semestre:</strong> 5to Semestre</div>
-            <div class="subsection"><strong>Profesor:</strong> Ernesto Cuadros</div>
-            <div class="subsection"><strong>Carrera:</strong> Administración de Empresas</div>
-        </div>
+<header>
+    <h1>Sergio Palomino</h1>
+    <p>Bienvenido a mi sitio personal</p>
+</header>
 
-        <div class="section">
-            <h3>GUSTOS Y PASATIEMPOS</h3>
-            <div class="subsection">Juego básquetbol en mis tiempos libres.</div>
-            <div class="subsection">Me apasionan los autos (modelo, diseño y rendimiento).</div>
-            <div class="subsection">Escucho música de muchos géneros.</div>
-            <div class="subsection">Mi color favorito es el verde.</div>
-        </div>
+<!-- SECCIÓN RECOMENDACIONES -->
+<section id="recomendaciones">
+    <h3>RECOMENDACIONES</h3>
+    <p>Te recomiendo visitar estas páginas de mis compañeras:</p>
+    <ul>
+        <li><a href="https://graziavalentina.github.io/Grazia-Valentina-Bedregal-Ochoa/" target="_blank">Grazia Valentina Bedregal Ochoa</a></li>
+        <li><a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">Jimena Sofía Quiroz Bautista</a></li>
+        <li><a href="https://krisletyahairajuarezarce.github.io/Krislet-Yahaira-Juarez-Arce/" target="_blank">Krislet Yahaira Juárez Arce</a></li>
+        <li><a href="https://mariafernandaapazameza.github.io/Maria-Fernanda-Apaza-Meza/" target="_blank">María Fernanda Apaza Meza</a></li>
+    </ul>
+</section>
 
-        <div class="section">
-            <h3>HABILIDADES Y COMPETENCIAS</h3>
-            <div class="skill">
-                <label><span class="icon">🤝</span> Trabajo en equipo</label>
-                <div class="progress-bar grey1">
-                    <div class="progress" style="width: 90%;">90%</div>
-                </div>
-                <p class="skill-desc">Me gusta el trabajo en equipo</p>
-            </div>
-            <div class="skill">
-                <label><span class="icon">🧠</span> Liderazgo</label>
-                <div class="progress-bar grey2">
-                    <div class="progress" style="width: 85%;">85%</div>
-                </div>
-                <p class="skill-desc">Me considero no el mejor pero sí buen líder</p>
-            </div>
-            <div class="skill">
-                <label><span class="icon">🗣️</span> Comunicación</label>
-                <div class="progress-bar grey3">
-                    <div class="progress" style="width: 80%;">80%</div>
-                </div>
-                <p class="skill-desc">Tengo buena comunicación</p>
-            </div>
-            <div class="skill">
-                <label><span class="icon">🌐</span> Inglés</label>
-                <div class="progress-bar grey4">
-                    <div class="progress" style="width: 40%;">40%</div>
-                </div>
-                <p class="skill-desc">Recién voy empezando, yo diría un 30 a 40%</p>
-            </div>
-        </div>
+<!-- SECCIÓN DOCENTES -->
+<section id="docentes">
+    <h3>DOCENTES</h3>
+    <div>
+        <p><strong>Curso:</strong> Análisis, Diseño y Gestión de Proceso<br />
+        <strong>Docente:</strong> Alfredo Mauricio Salinas Salas<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/" target="_blank">Perfil</a></p>
 
-        <div class="section">
-            <h3>OBJETIVOS PERSONALES O PROFESIONALES</h3>
-            <ul class="goals">
-                <li>Graduarme con honores</li>
-                <li>Trabajar en una empresa automotriz</li>
-                <li>Desarrollar un emprendimiento propio</li>
-            </ul>
-        </div>
+        <p><strong>Curso:</strong> Desarrollo de Habilidades de Negociación<br />
+        <strong>Docente:</strong> Renzo Menchola Tenorio<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anamariatorres" target="_blank">Perfil</a></p>
 
-        <div class="section">
-            <h3>RECOMENDACIONES</h3>
-            <div class="subsection">
-                Te recomiendo visitar estas páginas de mis compañeras:
-                <br /><br />
-                <a href="https://graziavalentina.github.io/Grazia-Valentina-Bedregal-Ochoa/" target="_blank">
-                    Grazia Valentina Bedregal Ochoa
-                </a>
-                <br />
-                <a href="https://jimenaq25.github.io/Jimena-Sofia-Quiroz-Bautista/" target="_blank">
-                    Jimena Sofía Quiroz Bautista
-                </a>
-                <br />
-                <a href="https://krisletyahairajuarezarce.github.io/Krislet-Yahaira-Juarez-Arce/" target="_blank">
-                    Krislet Yahaira Juárez Arce
-                </a>
-                <br />
-                <a href="https://mariafernandaapazameza.github.io/Maria-Fernanda-Apaza-Meza/" target="_blank">
-                    María Fernanda Apaza Meza
-            </ul>
-        </div>
+        <p><strong>Curso:</strong> Microeconomía<br />
+        <strong>Docente:</strong> Narda Valderrama Pacheco<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/narda-cecilia-valderrama-pacheco-3213ab35/" target="_blank">Perfil</a></p>
 
-        <div class="section">
-            <h3>DOCENTES</h3>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong>Análisis, Diseño y Gestión de Proceso<br />
-                    <strong>Docente:</strong>Alfredo Mauricio Salinas Salas<br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alfredo-salinas-49a994151/" target="_blank">Perfil</a>
-                </div>
-            </div>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong> Desarrollo de Habilidades de Negociación <br />
-                    <strong>Docente:</strong>Renzo Menchola Tenorio<br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anamariatorres" target="_blank">Perfil</a>
-                </div>
-            </div>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong>Microeconomía<br />
-                    <strong>Docente:</strong>Narda Valderrama Pacheco<br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/narda-cecilia-valderrama-pacheco-3213ab35/" target="_blank">Perfil</a>
-                </div>
-            </div>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong>Moral<br />
-                    <strong>Docente:</strong>Roger Michael Miller Silva<br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anamariatorres" target="_blank">Perfil</a>
-                </div>
-            </div>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong>Persona, Matrimonio y Familia<br />
-                    <strong>Docente:</strong>Carolina Dianderas Cáceres<br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedrogomez" target="_blank">Perfil</a>
-                </div>
-            </div>
-            <div class="docente">
-                <div class="docente-info">
-                    <strong>Curso:</strong>Analisis de Datos<br />
-                    <strong>Docente:</strong>Ernesto Cuadros Vargas <br />
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Perfil</a>
-                </div>
-            </div>
-        </div>
-            
-        <div class="section">
-            <h3>TOP CANCIONES FAVORITAS</h3>
-            <ol class="song-list">
-                <li><a href="https://open.spotify.com/intl-es/track/7sAnp0nDeHtrKpXKVMH21Y" target="_blank">Cuando Acaba el Placer</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/0gG5eEUkvrpkLPnHkwiSir" target="_blank">Mal De Amores</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/7xB3hSztVbX6xFvQqEGKud" target="_blank">Lo malo de ser bueno</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/6ECp64rv50XVz93WvxXMGF?si=1bbfcf0b92da4983" target="_blank">This Love</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/2igwFfvr1OAGX9SKDCPBwO?si=965fdb18eed2482b" target="_blank">Empire State Of Mind</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/755bmgNnWiS1NHYIHE5XQM?si=b5a7ac1fe42b4479" target="_blank">Frances Limon</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/43d8V5VtfQsYWfU1cdR9pB?si=f26be58423b54b64" target="_blank">Demasiada Presión</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/0dlTGl67UFWcKupzkxZYOn?si=93f41357bfa04670" target="_blank">You Could Be Mine</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/3FNy4yzOhHhFBeA5p4ofoq?si=f06e24b7eaed4e77" target="_blank">Young,Wild Y Free</a></li>
-                <li><a href="https://open.spotify.com/intl-es/track/7LpS82vPDLgZAHWRtWBBRj?si=7dba255c83944826" target="_blank">Ni tú ni nadie</a></li>
-            </ol>
-        </div>
+        <p><strong>Curso:</strong> Moral<br />
+        <strong>Docente:</strong> Roger Michael Miller Silva<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anamariatorres" target="_blank">Perfil</a></p>
 
-        <div class="section">
-            <h3>CONTACTO Y REDES</h3>
-            <ul>
-                <li><img src="icons/linkedin.png" class="icon" alt="LinkedIn" /><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sergiopalomino" target="_blank">linkedin.com/in/sergiopalomino</a></li>
-                <li><img src="icons/instagram.png" class="icon" alt="Instagram" /><strong>Instagram:</strong> <a href="https://instagram.com/sergiopalomino" target="_blank">@sergiopalomino</a></li>
-                <li><strong>Correo:</strong> <a href="mailto:sergio.palomino@example.com">sergio.palomino@example.com</a></li>
-                <li><img src="icons/spotify.png" class="icon" alt="Spotify" /><strong>Spotify:</strong> <a href="https://open.spotify.com/user/sergiopalomino" target="_blank">Mi perfil en Spotify</a></li>
-            </ul>
-        </div>
+        <p><strong>Curso:</strong> Persona, Matrimonio y Familia<br />
+        <strong>Docente:</strong> Carolina Dianderas Cáceres<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedrogomez" target="_blank">Perfil</a></p>
+
+        <p><strong>Curso:</strong> Análisis de Datos<br />
+        <strong>Docente:</strong> Ernesto Cuadros Vargas<br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Perfil</a></p>
     </div>
+</section>
+
+<!-- SECCIÓN CANCIONES FAVORITAS -->
+<section id="canciones">
+    <h3>TOP CANCIONES FAVORITAS</h3>
+    <ol class="song-list">
+        <li><a href="https://open.spotify.com/intl-es/track/7sAnp0nDeHtrKpXKVMH21Y" target="_blank">Cuando Acaba el Placer</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/0gG5eEUkvrpkLPnHkwiSir" target="_blank">Mal De Amores</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/7xB3hSztVbX6xFvQqEGKud" target="_blank">Lo malo de ser bueno</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/6ECp64rv50XVz93WvxXMGF?si=1bbfcf0b92da4983" target="_blank">This Love</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/2igwFfvr1OAGX9SKDCPBwO?si=965fdb18eed2482b" target="_blank">Empire State Of Mind</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/755bmgNnWiS1NHYIHE5XQM?si=b5a7ac1fe42b4479" target="_blank">Frances Limon</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/43d8V5VtfQsYWfU1cdR9pB?si=f26be58423b54b64" target="_blank">Demasiada Presión</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/0dlTGl67UFWcKupzkxZYOn?si=93f41357bfa04670" target="_blank">You Could Be Mine</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/3FNy4yzOhHhFBeA5p4ofoq?si=f06e24b7eaed4e77" target="_blank">Young, Wild & Free</a></li>
+        <li><a href="https://open.spotify.com/intl-es/track/7LpS82vPDLgZAHWRtWBBRj?si=7dba255c83944826" target="_blank">Ni tú ni nadie</a></li>
+    </ol>
+</section>
+
+<!-- SECCIÓN CONTACTO Y REDES -->
+<section id="contacto">
+    <h3>CONTACTO Y REDES</h3>
+    <ul>
+        <li><img src="icons/linkedin.png" class="icon" alt="LinkedIn" /><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sergiopalomino" target="_blank">linkedin.com/in/sergiopalomino</a></li>
+        <li><img src="icons/instagram.png" class="icon" alt="Instagram" /><strong>Instagram:</strong> <a href="https://instagram.com/sergiopalomino" target="_blank">@sergiopalomino</a></li>
+        <li><strong>Correo:</strong> <a href="mailto:sergio.palomino@example.com">sergio.palomino@example.com</a></li>
+        <li><img src="icons/spotify.png" class="icon" alt="Spotify" /><strong>Spotify:</strong> <a href="https://open.spotify.com/user/sergiopalomino" target="_blank">Mi perfil en Spotify</a></li>
+    </ul>
+</section>
+
 </body>
 </html>
